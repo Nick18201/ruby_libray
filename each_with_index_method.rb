@@ -12,3 +12,21 @@ def sum_odd_indexed(array)
 
 sum
 end
+
+fruits = ["orange", "banane", "ananas", "mangue"]
+
+# OUTPUT
+# Mon fruit #1 est : orange
+# Mon fruit #2 est : banane
+# ...
+
+fruits.each_with_index do |fruit, counter|
+  puts "Mon fruit ##{counter + 1} est : #{fruit}"
+end
+
+
+# counter = 1
+# for fruit in fruits
+#   puts "Mon fruit ##{counter} est : #{fruit}"
+#   counter += 1
+# end
