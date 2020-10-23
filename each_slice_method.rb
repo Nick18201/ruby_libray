@@ -1,6 +1,6 @@
 def sorted_pairs(array)
   result = []
-  # TODO: Reorganize an array into slices of 2 elements, and sort each slice alphabetically.
+  # TODO: Reorganize an array into slices of n elements, and sort each slice alphabetically.
   #       You should use of Enumerable#each_slice
   array.each_slice(2) { |s| result << s.sort }
   result
