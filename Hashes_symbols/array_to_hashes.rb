@@ -24,5 +24,5 @@ def array_to_hash(array)
     key = block_given? ? yield(index) : index.to_s
     hash[key] = item
   end
-  return hash
+  hash
 end
